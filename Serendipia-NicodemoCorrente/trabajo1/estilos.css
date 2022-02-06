@@ -1,0 +1,879 @@
+@font-face {
+    font-family: "Lobster-Regular";
+    src: url("../trabajo1/fuente/Lobster-Regular.ttf");
+}
+
+
+body{
+    font-family: "Lobster-Regular";
+    background-color: lightgoldenrodyellow;
+} 
+
+header h1{
+    text-align: center;
+    font-size: 120px;
+    color:black
+}
+
+header h2{
+    text-align: center;
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.fondoImagen{
+    background-image: url("../trabajo1/models.jpg!d");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+}
+
+
+
+header{
+    width: 100%;
+    height: 550px;
+    margin: 0;
+    padding: 3px;
+    
+    
+}
+
+section nav ul li{
+    width: 100%;
+    background-color: lightgrey;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    font-size: 30px;
+ /*   border: solid 5px gray;*/
+    
+}
+
+
+
+aside nav ul li{
+    list-style-type: none;
+    font-size: 30px;
+    color: whitesmoke;
+
+
+}
+
+footer nav ul li{
+    width: 100%;
+    background-color: lightgray;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+ /*   border: solid 5px gray;*/
+    
+}
+
+footer nav{
+    background-color: lightgray;
+}
+
+section{
+    background-color: lightgrey;
+}
+
+.sinSubrayado{
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 60px;
+    color:grey
+}
+
+.fondoFooter{
+    background-color: grey;
+    text-align: center;
+    padding:10px
+}
+
+
+.fondoFormulario{
+    background-image: url("../trabajo1/streetwear.png");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+    height: 690px;
+}
+
+
+.menuFlex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li:hover{
+    background-color: lightgoldenrodyellow;
+    color: grey;
+    border-radius: 20px;
+}
+
+#gridAreas{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "menu menu"
+    "productos women"
+    "productos men"
+    "pie pie"
+    ;
+
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+    
+
+}
+
+header{
+    grid-area: cabeza;
+}
+
+#menu{
+    grid-area: menu;
+}
+
+#productos{
+    grid-area: productos;
+   
+}
+
+#women{
+    grid-area: women;
+}
+
+#men{
+    grid-area: men;
+}
+
+footer{
+    grid-area: pie;
+}
+
+aside{
+    background-color: grey;
+}
+
+.productosFlex{
+    display: flex;
+  /*  flex-direction: row;*/
+    flex-flow:row wrap;
+}
+
+article{
+    background-color: lightgoldenrodyellow;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+    
+}
+
+
+article p{
+    margin:10px 0;
+
+}
+
+.sectionShorts{
+    padding: 10px;
+    margin: 5px;
+  
+
+}
+
+#gridShorts{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "menu menu"
+    "productos shorts"
+    "productos shorts"
+    "pie pie"
+    ;
+
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+    
+
+}
+
+#shorts{
+    grid-area: shorts;
+   
+}
+
+
+@media(min-width:1024px){
+
+    @font-face {
+        font-family: "Lobster-Regular";
+        src: url("../trabajo1/fuente/Lobster-Regular.ttf");
+    }
+    
+    
+    body{
+        font-family: "Lobster-Regular";
+        background-color: lightgoldenrodyellow;
+    } 
+    
+    header h1{
+        text-align: center;
+        font-size: 120px;
+        color:black
+    }
+    
+    header h2{
+        text-align: center;
+        font-size: 60px;
+        color: whitesmoke;
+    }
+    
+    .fondoImagen{
+        background-image: url("../trabajo1/models.jpg!d");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size: cover;
+    }
+    
+    
+    
+    header{
+        width: 100%;
+        height: 550px;
+        margin: 0;
+        padding: 3px;
+        
+        
+    }
+    
+    section nav ul li{
+        width: 100%;
+        background-color: lightgrey;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 0px;
+        text-align: center;
+        font-size: 30px;
+     /*   border: solid 5px gray;*/
+        
+    }
+    
+    
+    
+    aside nav ul li{
+        list-style-type: none;
+        font-size: 30px;
+        color: whitesmoke;
+    
+    
+    }
+    
+    footer nav ul li{
+        width: 100%;
+        background-color: lightgray;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 0px;
+        text-align: center;
+        font-size: 20px;
+     /*   border: solid 5px gray;*/
+        
+    }
+    
+    footer nav{
+        background-color: lightgray;
+    }
+    
+    section{
+        background-color: lightgrey;
+    }
+    
+    .sinSubrayado{
+        text-decoration: none;
+    }
+    
+    .titulo{
+        font-size: 60px;
+        color:grey
+    }
+    
+    .fondoFooter{
+        background-color: grey;
+        text-align: center;
+        padding:10px
+    }
+    
+    
+    .fondoFormulario{
+        background-image: url("../trabajo1/streetwear.png");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size: cover;
+        height: 690px;
+    }
+    
+    
+    .menuFlex{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    li:hover{
+        background-color: lightgoldenrodyellow;
+        color: grey;
+        border-radius: 20px;
+    }
+    
+    #gridAreas{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "menu menu"
+        "productos women"
+        "productos men"
+        "pie pie"
+        ;
+    
+        grid-template-columns: 20% auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+    
+  
+    
+    
+    aside{
+        background-color: grey;
+    }
+    
+    .productosFlex{
+        display: flex;
+      /*  flex-direction: row;*/
+        flex-flow:row wrap;
+        justify-content: center;
+    }
+    
+    article{
+        background-color: lightgoldenrodyellow;
+        border-radius: 4px;
+        margin: 5px;
+        text-align: center;
+        font-size: 1rem;
+        padding: 20px;
+        
+    }
+    
+    
+    article p{
+        margin:10px 0;
+    
+    }
+    
+    .sectionShorts{
+        padding: 10px;
+        margin: 5px;
+      
+    
+    }
+    
+    #gridShorts{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "menu menu"
+        "productos shorts"
+        "productos shorts"
+        "pie pie"
+        ;
+    
+        grid-template-columns: 20% auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+    
+   
+
+
+
+}
+
+
+@media(min-width: 481px) and (max-width: 1023px) {
+
+    @font-face {
+        font-family: "Lobster-Regular";
+        src: url("../trabajo1/fuente/Lobster-Regular.ttf");
+    }
+    
+    
+    body{
+        font-family: "Lobster-Regular";
+        background-color: lightgoldenrodyellow;
+    } 
+    
+    header h1{
+        text-align: center;
+        font-size: 120px;
+        color:black;
+        
+    }
+    
+    header h2{
+        text-align: center;
+        font-size: 45px;
+        color: whitesmoke;
+    }
+    
+    .fondoImagen{
+        background-image: url("../trabajo1/models.jpg!d");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size: cover;
+    }
+    
+    
+    
+    header{
+        width: 100%;
+        height: 550px;
+        margin: 0;
+        padding: 3px;
+        
+        
+    }
+    
+    section nav ul li{
+        width: 100%;
+        background-color: lightgrey;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 0px;
+        text-align: center;
+        font-size: 25px;
+     /*   border: solid 5px gray;*/
+        
+    }
+    
+    
+    
+    aside nav ul li{
+        list-style-type: none;
+        font-size: 25px;
+        color: whitesmoke;
+    
+    
+    }
+    
+    footer nav ul li{
+        width: 100%;
+        background-color: lightgray;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 0px;
+        text-align: center;
+        font-size: 20px;
+     /*   border: solid 5px gray;*/
+        
+    }
+    
+    footer nav{
+        background-color: lightgray;
+    }
+    
+    section{
+        background-color: lightgrey;
+    }
+    
+    .sinSubrayado{
+        text-decoration: none;
+    }
+    
+    .titulo{
+        font-size: 45px;
+        color:grey
+    }
+    
+    .fondoFooter{
+        background-color: grey;
+        text-align: center;
+        padding:10px
+    }
+    
+    img{
+        height: 500px;
+        width: 100%;
+    }
+
+    article img{
+        height: 200px;
+    }
+    
+    .fondoFormulario{
+        background-image: url("../trabajo1/streetwear.png");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size: cover;
+        height: 690px;
+    }
+    
+    
+    .menuFlex{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    li:hover{
+        background-color: lightgoldenrodyellow;
+        color: grey;
+        border-radius: 20px;
+    }
+    
+    #gridAreas{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "women"
+        "men"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+    
+  
+    
+    
+    aside{
+        background-color: grey;
+    }
+    
+    .productosFlex{
+        display: flex;
+      /*  flex-direction: row;*/
+        flex-flow:row wrap;
+        justify-content:center;
+    }
+    
+    article{
+        background-color: lightgoldenrodyellow;
+        border-radius: 4px;
+        margin: 5px;
+        text-align: center;
+        font-size: 1rem;
+        padding: 20px;
+        
+    }
+    
+    
+    article p{
+        margin:10px 0;
+    
+    }
+    
+    .sectionShorts{
+        padding: 10px;
+        margin: 5px;
+      
+    
+    }
+    
+    #gridShorts{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "shorts"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+@media(max-width:480px) {
+
+    @font-face {
+        font-family: "Lobster-Regular";
+        src: url("../trabajo1/fuente/Lobster-Regular.ttf");
+    }
+    
+    
+    body{
+        font-family: "Lobster-Regular";
+        background-color: lightgoldenrodyellow;
+    } 
+    
+    header h1{
+        text-align: center;
+        font-size: 95px;
+        color:whitesmoke;
+        
+    }
+    
+    header h2{
+        text-align: center;
+        font-size: 30px;
+        color: black;
+    }
+    
+    .fondoImagen{
+        background-image: url("../trabajo1/models.jpg!d");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size: cover;
+    }
+    
+    
+    
+    header{
+        width: 100%;
+        height: 550px;
+        margin: 0;
+        padding: 3px;
+        
+        
+    }
+    
+    section nav ul li{
+        width: 100%;
+        background-color: lightgrey;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 0px;
+        text-align: center;
+        font-size: 20px;
+     /*   border: solid 5px gray;*/
+        
+    }
+    
+    
+    
+    aside nav ul li{
+        list-style-type: none;
+        font-size: 20px;
+        color: whitesmoke;
+    
+    
+    }
+    
+    footer nav ul li{
+        width: 100%;
+        background-color: lightgray;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 0px;
+        text-align: center;
+        font-size: 20px;
+     /*   border: solid 5px gray;*/
+        
+    }
+    
+    footer nav{
+        background-color: lightgray;
+    }
+    
+    section{
+        background-color: lightgrey;
+    }
+    
+    .sinSubrayado{
+        text-decoration: none;
+    }
+    
+    .titulo{
+        font-size: 30px;
+        color:grey
+    }
+    
+    .fondoFooter{
+        background-color: grey;
+        text-align: center;
+        padding:10px
+    }
+    
+    img{
+        height: 350px;
+        width: 100%;
+    }
+
+    article img{
+        height: 150px;
+    }
+    
+    .fondoFormulario{
+        background-image: url("../trabajo1/streetwear.png");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size: cover;
+        height: 690px;
+    }
+    
+    
+    .menuFlex{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    li:hover{
+        background-color: lightgoldenrodyellow;
+        color: grey;
+        border-radius: 20px;
+    }
+    
+    #gridAreas{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "women"
+        "men"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+    
+  
+    
+    
+    aside{
+        background-color: grey;
+    }
+    
+    .productosFlex{
+        display: flex;
+      /*  flex-direction: row;*/
+        flex-flow:row wrap;
+        justify-content: center;
+    }
+    
+    article{
+        background-color: lightgoldenrodyellow;
+        border-radius: 4px;
+        margin: 5px;
+        text-align: center;
+        font-size: 1rem;
+        padding: 20px;
+        
+    }
+    
+    
+    article p{
+        margin:10px 0;
+    
+    }
+    
+    .sectionShorts{
+        padding: 10px;
+        margin: 5px;
+      
+    
+    }
+    
+    #gridShorts{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "shorts"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
