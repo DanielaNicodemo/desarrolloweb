@@ -87,6 +87,7 @@ section{
     background-color: lightgrey;
 }
 
+
 .sinSubrayado{
     text-decoration: none;
 }
@@ -221,6 +222,17 @@ article p{
 #shorts{
     grid-area: shorts;
    
+}
+
+#sale{
+    grid-area: sale;
+    font-size: 60px;
+   /* background-color: yellow;*/
+    text-align: center;
+    margin: 0;
+ /*   background-image: radial-gradient( #eaf818 40%, #f6fc9c 74%);*/
+    background-image: radial-gradient( #f6fc9c 30%,#eaf818 74% )
+    
 }
 
 
@@ -359,6 +371,7 @@ article p{
         grid-template-areas: 
         "cabeza cabeza"
         "menu menu"
+        "productos sale"
         "productos women"
         "productos men"
         "pie pie"
@@ -577,6 +590,7 @@ article p{
         "cabeza"
         "menu"
         "productos"
+        "sale"
         "women"
         "men"
         "pie"
@@ -800,6 +814,7 @@ article p{
         "cabeza"
         "menu"
         "productos"
+        "sale"
         "women"
         "men"
         "pie"
@@ -876,4 +891,7 @@ article p{
 }
 
 
-
+/*animacion: cambio duracion*/
+.animate__animated.animate__flash {
+    --animate-duration: 1.5s;
+  }
