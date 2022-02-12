@@ -121,11 +121,13 @@ section{
     align-items: center;
 }
 
-li:hover{
+/*.li:hover{
     background-color: lightgoldenrodyellow;
     color: grey;
     border-radius: 20px;
-}
+}*/
+
+
 
 #gridAreas{
     display: grid;
@@ -221,6 +223,162 @@ article p{
 
 #shorts{
     grid-area: shorts;
+   
+}
+
+#gridJeans{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "menu menu"
+    "productos jeans"
+    "productos jeans"
+    "pie pie"
+    ;
+
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+    
+
+}
+
+#jeans{
+    grid-area: jeans;
+   
+}
+
+#gridCamisas{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "menu menu"
+    "productos camisas"
+    "productos camisas"
+    "pie pie"
+    ;
+
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+    
+
+}
+
+#camisas{
+    grid-area: camisas;
+   
+}
+
+#gridCamperas{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "menu menu"
+    "productos camperas"
+    "productos camperas"
+    "pie pie"
+    ;
+
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+    
+
+}
+
+#camperas{
+    grid-area: camperas;
+   
+}
+
+#gridPantalones{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "menu menu"
+    "productos pantalones"
+    "productos pantalones"
+    "pie pie"
+    ;
+
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+    
+
+}
+
+#pantalones{
+    grid-area: pantalones;
+   
+}
+
+#gridVestidos{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "menu menu"
+    "productos vestidos"
+    "productos vestidos"
+    "pie pie"
+    ;
+
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+    
+
+}
+
+#vestidos{
+    grid-area: vestidos;
+   
+}
+
+
+#gridBuzos{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "menu menu"
+    "productos buzos"
+    "productos buzos"
+    "pie pie"
+    ;
+
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+    
+
+}
+
+#buzos{
+    grid-area: buzos;
+   
+}
+
+
+#gridTops{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "menu menu"
+    "productos tops"
+    "productos tops"
+    "pie pie"
+    ;
+
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+    
+
+}
+
+#tops{
+    grid-area: tops;
    
 }
 
@@ -360,11 +518,31 @@ article p{
         align-items: center;
     }
     
-    li:hover{
+    .itemMenu:hover{
         background-color: lightgoldenrodyellow;
         color: grey;
         border-radius: 20px;
     }
+
+    .itemMenu:active{
+        background-color: black;
+        color: white;
+    }
+
+    .itemMenu:link{
+        color: darkgrey;
+    }
+
+    .itemMenu:visited{
+        color: darkgrey;
+    }
+
+    ::selection{
+        color:goldenrod;
+        background-color:lightslategray;
+    }
+
+
     
     #gridAreas{
         display: grid;
@@ -437,6 +615,130 @@ article p{
         
     
     }
+
+    #gridJeans{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "menu menu"
+        "productos jeans"
+        "productos jeans"
+        "pie pie"
+        ;
+    
+        grid-template-columns: 20% auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
+    #gridCamisas{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "menu menu"
+        "productos camisas"
+        "productos camisas"
+        "pie pie"
+        ;
+    
+        grid-template-columns: 20% auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+    #gridCamperas{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "menu menu"
+        "productos camperas"
+        "productos camperas"
+        "pie pie"
+        ;
+    
+        grid-template-columns: 20% auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+    #gridPantalones{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "menu menu"
+        "productos pantalones"
+        "productos pantalones"
+        "pie pie"
+        ;
+    
+        grid-template-columns: 20% auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
+    #gridVestidos{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "menu menu"
+        "productos vestidos"
+        "productos vestidos"
+        "pie pie"
+        ;
+    
+        grid-template-columns: 20% auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+    #gridBuzos{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "menu menu"
+        "productos buzos"
+        "productos buzos"
+        "pie pie"
+        ;
+    
+        grid-template-columns: 20% auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
+    #gridTops{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "menu menu"
+        "productos tops"
+        "productos tops"
+        "pie pie"
+        ;
+    
+        grid-template-columns: 20% auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+    
+   
     
    
 
@@ -578,10 +880,28 @@ article p{
         align-items: center;
     }
     
-    li:hover{
+    .itemMenu:hover{
         background-color: lightgoldenrodyellow;
         color: grey;
         border-radius: 20px;
+    }
+
+    .itemMenu:active{
+        background-color: black;
+        color: white;
+    }
+
+    .itemMenu:link{
+        color: darkgrey;
+    }
+
+    .itemMenu:visited{
+        color: darkgrey;
+    }
+
+    ::selection{
+        color:goldenrod;
+        background-color:lightslategray;
     }
     
     #gridAreas{
@@ -647,6 +967,127 @@ article p{
         "menu"
         "productos"
         "shorts"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
+    #gridJeans{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "jeans"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+    #gridCamisas{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "camisas"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+    #gridCamperas{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "camperas"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+    #gridPantalones{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "pantalones"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
+    #gridVestidos{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "vestidos"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+    #gridBuzos{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "buzos"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+    #gridTops{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "tops"
         "pie"
         ;
     
@@ -802,10 +1243,28 @@ article p{
         align-items: center;
     }
     
-    li:hover{
+    .itemMenu:hover{
         background-color: lightgoldenrodyellow;
         color: grey;
         border-radius: 20px;
+    }
+
+    .itemMenu:active{
+        background-color: black;
+        color: white;
+    }
+
+    .itemMenu:link{
+        color: darkgrey;
+    }
+
+    .itemMenu:visited{
+        color: darkgrey;
+    }
+
+    ::selection{
+        color:goldenrod;
+        background-color:lightslategray;
     }
     
     #gridAreas{
@@ -871,6 +1330,129 @@ article p{
         "menu"
         "productos"
         "shorts"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+    #gridJeans{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "jeans"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
+    #gridCamisas{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "camisas"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+    #gridCamperas{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "camperas"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
+    #gridPantalones{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "pantalones"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
+    #gridVestidos{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "vestidos"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+    #gridBuzos{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "buzos"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
+    #gridTops{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "tops"
         "pie"
         ;
     
