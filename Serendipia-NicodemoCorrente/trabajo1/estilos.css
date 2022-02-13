@@ -21,6 +21,10 @@ header h2{
     color: whitesmoke;
 }
 
+h3{
+    font-size: 30px;
+}
+
 .fondoImagen{
     background-image: url("../trabajo1/models.jpg!d");
     background-repeat:no-repeat;
@@ -382,6 +386,28 @@ article p{
    
 }
 
+#gridNosotros{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "menu menu"
+    "productos nosotros"
+    "productos nosotros"
+    "pie pie"
+    ;
+
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+    
+
+}
+
+#nosotros{
+    grid-area: nosotros;
+   
+}
+
 #sale{
     grid-area: sale;
     font-size: 60px;
@@ -417,6 +443,20 @@ article p{
         text-align: center;
         font-size: 60px;
         color: whitesmoke;
+    }
+
+    h3{
+        font-size: 20px;
+
+    }
+
+    .descripcionEmpresa{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .seccionNosotros{
+        padding: 20px;
     }
     
     .fondoImagen{
@@ -738,6 +778,22 @@ article p{
     
     }
     
+    #gridNosotros{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "menu menu"
+        "productos nosotros"
+        "productos nosotros"
+        "pie pie"
+        ;
+    
+        grid-template-columns: 20% auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
    
     
    
@@ -771,6 +827,19 @@ article p{
         text-align: center;
         font-size: 45px;
         color: whitesmoke;
+    }
+
+    h3{
+        font-size: 20px;;
+    }
+
+    .descripcionEmpresa{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .seccionNosotros{
+        padding: 20px;
     }
     
     .fondoImagen{
@@ -1098,6 +1167,24 @@ article p{
     
     }
 
+    #gridNosotros{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "nosotros"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
+
 
 
 
@@ -1135,7 +1222,22 @@ article p{
         font-size: 30px;
         color: black;
     }
+
+    h3{
+        font-size: 10px;;
+    }
+
+    .descripcionEmpresa{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .seccionNosotros{
+        padding: 20px;
+    }
     
+
+
     .fondoImagen{
         background-image: url("../trabajo1/models.jpg!d");
         background-repeat:no-repeat;
@@ -1462,6 +1564,24 @@ article p{
         
     
     }
+
+    #gridNosotros{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "menu"
+        "productos"
+        "nosotros"
+        "pie"
+        ;
+    
+        grid-template-columns: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+        
+    
+    }
+
 
 
 
