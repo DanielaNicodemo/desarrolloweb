@@ -717,6 +717,17 @@ article p{
     
 }
 
+#envio{
+    font-size: 20px;
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    margin: 0;
+    animation-duration: 5s;
+ 
+    
+}
+
 
 @media(min-width:1024px){
 
