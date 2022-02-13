@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body id="gridContacto">
 
     <header id="arriba">
     
@@ -59,6 +59,7 @@
 
     </header>
 
+
     <hr>
     <section id= "menu">
         <nav>
@@ -75,39 +76,111 @@
         </nav>
         </section>
 
-    <section>
-
-    <h1 class="titulo">Contacto</h1>
-    
-    <form action="" class="fondoFormulario">
-
-            <label for="nombre">Nombre:</label>
-            <input type= "text" name= "nombre"><br>
-            <label for="correo">Email:</label>
-            <input type= "email" name= "correo"><br>
-            <label for="contraseña">Contraseña:</label>
-            <input type= "password" name= "contraseña"><br>
-            <label for="comentarios"> Comentarios:</label>
-            <textarea name="comentarios" cols="30" rows="10"></textarea>
-       
-        
-        <h2>Género</h2>
-        <span>Hombre</span>
-        <input type="radio" name="genero" value="hombre"><br>
-        <span>Mujer</span>
-        <input type="radio" name="genero" value="mujer">
-       <br>
-
-       <span>Acepta terminos y condiciones</span>
-       <input type="checkbox" name="acepta" value="1">
-
+        <aside id="productos">
+          <nav>
+              <ul>
+                  <hr>
+                  <li>Women</a></li>
+                  <ul>
       
-       
-        <br>
-        <input type= "submit" value="Enviar formulario">
-    </form>
+                    <li><a href= "shorts.html" class="sinSubrayado itemMenu">Shorts y faldas</a></li>
+                    <li><a href= "tops.html" class= "sinSubrayado itemMenu">Tops y remeras</a></li>
+                    <li><a href= "jeans.html" class="sinSubrayado itemMenu">Jeans</a></li>
+                    <li><a href= "camisas.html" class="sinSubrayado itemMenu">Camisas</a></li>
+                    <li><a href= "camperas.html" class= "sinSubrayado itemMenu">Camperas/ Blazers</a></li>
+                    <li><a href= "pantalones.html" class="sinSubrayado itemMenu">Pantalones/ Leggins</a></li>
+                    <li><a href= "vestidos.html" class="sinSubrayado itemMenu">Vestidos</a></li>
+                    <li><a href= "buzos.html" class="sinSubrayado itemMenu">Buzos/ Sweaters</a></li>
+    
+                </ul>
+                <hr>
+    
+                <li>Men</a></li>
+                <ul>
+    
+                    <li><a href= "remerasMen.html" class="sinSubrayado itemMenu">Remeras y musculosas</a></li>
+                    <li><a href= "camperasMen.html" class= "sinSubrayado itemMenu">Camperas</a></li>
+                    <li><a href= "jeansMen.html" class="sinSubrayado itemMenu">Jeans</a></li>
+                    <li><a href= "camisasMen.html" class="sinSubrayado itemMenu">Camisas</a></li>
+                    <li><a href= "underwearMen.html" class= "sinSubrayado itemMenu">Underwear</a></li>
+                    <li><a href= "pantalonesMen.html" class="sinSubrayado itemMenu">Pantalones</a></li>
+                    <li><a href= "bermudasMen.html" class="sinSubrayado itemMenu">Bermudas</a></li>
+                    <li><a href= "buzosMen.html" class="sinSubrayado itemMenu">Buzos/ Sweaters</a></li>
+    
+                </ul>
+      
+                  <hr>
+      
+      
+                  <li>Accesorios</a></li>
+                  <ul>
+                    <li><a href= "accesorios.html" class="sinSubrayado itemMenu">Women & Men</a></li>
+    
+                 </ul>
+                  <hr>
+      
+                  <li>Tablas de Talles</a></li>
+                  <ul>
+                    <li><a href= "talles.html" class="sinSubrayado itemMenu">Women & Men</a></li>
+      
+                 </ul>
+                 
+      
+                 
+      
+      
+              </ul>
+          </nav>
+          </aside>       
+
+
+    <main id="contacto"> 
+      <h1 class="titulo">Contacto</h1> 
+    <section class="seccionContacto">
+      
+
+        
+        
+        <form action="" class="fondoFormulario">
+
+                <label for="nombre">Nombre:</label>
+                <input type= "text" name= "nombre"><br>
+                <label for="correo">Email:</label>
+                <input type= "email" name= "correo"><br>
+              <!-- <label for="contraseña">Contraseña:</label> 
+                <input type= "password" name= "contraseña"><br> -->
+                <label for="comentarios"> Comentarios:</label>
+                <textarea name="comentarios" cols="30" rows="10"></textarea>
+          
+            
+            <h2>Género</h2>
+            <span>Hombre</span>
+            <input type="radio" name="genero" value="hombre"><br>
+            <span>Mujer</span>
+            <input type="radio" name="genero" value="mujer">
+          <br>
+
+          <span>Acepta terminos y condiciones</span>
+          <input type="checkbox" name="acepta" value="1">
+
+          
+          
+            <br>
+            <input type= "submit" value="Enviar formulario">
+        </form>
     
     </section>
+
+
+    <section class="seccionNosotros">
+
+      <article>
+        <h3>Noguera 22, San Antonio de Padua, Pcia. de Buenos Aires. <br>Tel: 0220- 4825622 <br>Cel: 11457562646 <br>Email: serendipia@gmail.com </h3>
+        </article>
+
+    </section>
+
+    </main>
 
     <br>
     <footer id="abajo" class="fondoFooter">
@@ -115,10 +188,10 @@
 
             <nav> 
                 <ul class="menuFlex">
-                  <li class="itemMenu">Medios de Pago</li>
+                  <li><a href= "pago.html" class="sinSubrayado itemMenu">Medios de Pago y Promociones Bancarias</a></li>
                   <li><a href= "formulario.html" class="sinSubrayado itemMenu">Contacto</a></li>
-                  <li class="itemMenu">Políticas de Cambio y Devolución</li>
-                  <li class="itemMenu">Tabla de Talles</li>
+                  <li><a href= "cambios.html" class="sinSubrayado itemMenu">Políticas de Cambios y Devoluciones</a></li>
+                  <li><a href= "talles.html" class="sinSubrayado itemMenu">Tablas de Talles</a></li>
                 </ul>
 
 
