@@ -1,0 +1,1558 @@
+/*import*/
+@font-face {
+  font-family: "Lobster-Regular";
+  src: url("../fuente/Lobster-Regular.ttf");
+}
+body {
+  font-family: "Lobster-Regular";
+  background-color: lightgoldenrodyellow;
+}
+
+header {
+  width: 100%;
+  height: 550px;
+  margin: 0;
+  padding: 3px;
+}
+header h1 {
+  text-align: center;
+  font-size: 120px;
+  color: black;
+}
+header h2 {
+  text-align: center;
+  font-size: 60px;
+  color: whitesmoke;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+section nav ul li {
+  width: 100%;
+  background-color: lightgrey;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0px;
+  text-align: center;
+  font-size: 30px;
+  /*   border: solid 5px gray;*/
+}
+
+aside nav ul li {
+  list-style-type: none;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+footer nav ul li {
+  width: 100%;
+  background-color: lightgray;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0px;
+  text-align: center;
+  font-size: 20px;
+  /*   border: solid 5px gray;*/
+}
+
+.sinSubrayado {
+  text-decoration: none;
+}
+
+.titulo {
+  font-size: 60px;
+  color: grey;
+}
+
+article {
+  background-color: lightgoldenrodyellow;
+  border-radius: 4px;
+  margin: 5px;
+  text-align: center;
+  font-size: 1rem;
+  padding: 20px;
+}
+article p {
+  margin: 10px 0;
+}
+
+.fondoImagen {
+  background-image: url("../trabajo1/models.jpg!d");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+footer nav {
+  background-color: lightgray;
+}
+
+section {
+  background-color: lightgrey;
+}
+
+.fondoFooter {
+  background-color: grey;
+  text-align: center;
+  padding: 10px;
+}
+
+.fondoFormulario {
+  background-image: url("../trabajo1/streetwear.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 690px;
+}
+
+aside {
+  background-color: grey;
+}
+
+.sectionShorts {
+  padding: 10px;
+  margin: 5px;
+}
+
+.fondoEnvio {
+  background-color: black;
+}
+
+.menuFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.productosFlex {
+  display: flex;
+  /*  flex-direction: row;*/
+  flex-flow: row wrap;
+}
+
+#gridAreas {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos women" "productos men" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+header {
+  grid-area: cabeza;
+}
+
+#menu {
+  grid-area: menu;
+}
+
+#productos {
+  grid-area: productos;
+}
+
+#women {
+  grid-area: women;
+}
+
+#men {
+  grid-area: men;
+}
+
+footer {
+  grid-area: pie;
+}
+
+#gridShorts {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos shorts" "productos shorts" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#shorts {
+  grid-area: shorts;
+}
+
+#gridJeans {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos jeans" "productos jeans" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#jeans {
+  grid-area: jeans;
+}
+
+#gridCamisas {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos camisas" "productos camisas" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#camisas {
+  grid-area: camisas;
+}
+
+#gridCamperas {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos camperas" "productos camperas" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#camperas {
+  grid-area: camperas;
+}
+
+#gridPantalones {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos pantalones" "productos pantalones" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#pantalones {
+  grid-area: pantalones;
+}
+
+#gridVestidos {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos vestidos" "productos vestidos" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#vestidos {
+  grid-area: vestidos;
+}
+
+#gridBuzos {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos buzos" "productos buzos" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#buzos {
+  grid-area: buzos;
+}
+
+#gridTops {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos tops" "productos tops" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#tops {
+  grid-area: tops;
+}
+
+#gridNosotros {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos nosotros" "productos nosotros" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#nosotros {
+  grid-area: nosotros;
+}
+
+#gridContacto {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos contacto" "productos contacto" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#contacto {
+  grid-area: contacto;
+}
+
+#gridLogin {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos login" "productos login" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#login {
+  grid-area: login;
+}
+
+#gridPago {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos pago" "productos pago" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#pago {
+  grid-area: pago;
+}
+
+#gridRemerasMen {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos remerasMen" "productos remerasMen" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#remerasMen {
+  grid-area: remerasMen;
+}
+
+#gridCamperasMen {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos camperasMen" "productos camperasMen" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#camperasMen {
+  grid-area: camperasMen;
+}
+
+#gridJeansMen {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos jeansMen" "productos jeansMen" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#jeansMen {
+  grid-area: jeansMen;
+}
+
+#gridCamisasMen {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos camisasMen" "productos camisasMen" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#camisasMen {
+  grid-area: camisasMen;
+}
+
+#gridUnderwearMen {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos underwearMen" "productos underwearMen" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#underwearMen {
+  grid-area: underwearMen;
+}
+
+#gridPantalonesMen {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos pantalonesMen" "productos pantalonesMen" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#pantalonesMen {
+  grid-area: pantalonesMen;
+}
+
+#gridBermudasMen {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos bermudasMen" "productos bermudasMen" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#bermudasMen {
+  grid-area: bermudasMen;
+}
+
+#gridBuzosMen {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos buzosMen" "productos buzosMen" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#buzosMen {
+  grid-area: buzosMen;
+}
+
+#gridAccesorios {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos accesorios" "productos accesorios" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#accesorios {
+  grid-area: accesorios;
+}
+
+#gridTalles {
+  display: grid;
+  grid-template-areas: "cabeza cabeza" "menu menu" "productos talles" "productos talles" "pie pie";
+  grid-template-columns: 20% auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0;
+}
+
+#talles {
+  grid-area: talles;
+}
+
+#sale {
+  grid-area: sale;
+  font-size: 60px;
+  /* background-color: yellow;*/
+  text-align: center;
+  margin: 0;
+  /*   background-image: radial-gradient( #eaf818 40%, #f6fc9c 74%);*/
+  background-image: radial-gradient(#f6fc9c 30%, #eaf818 74%);
+}
+
+/*animacion: cambio duracion*/
+.animate__animated.animate__flash {
+  --animate-duration: 1.5s;
+}
+
+#envio {
+  font-size: 20px;
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  margin: 0;
+  animation-duration: 5s;
+}
+
+@media (min-width: 1024px) {
+  @font-face {
+    font-family: "Lobster-Regular";
+    src: url("../trabajo1/fuente/Lobster-Regular.ttf");
+  }
+  body {
+    font-family: "Lobster-Regular";
+    background-color: lightgoldenrodyellow;
+  }
+
+  header h1 {
+    text-align: center;
+    font-size: 120px;
+    color: black;
+  }
+  header h2 {
+    text-align: center;
+    font-size: 60px;
+    color: whitesmoke;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .subrayado {
+    text-decoration: underline;
+  }
+
+  .descripcionEmpresa {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .seccionNosotros {
+    padding: 20px;
+  }
+
+  .seccionContacto {
+    padding: 20px;
+  }
+
+  .seccionPago {
+    padding: 20px;
+  }
+
+  .fondoImagen {
+    background-image: url("../trabajo1/models.jpg!d");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  header {
+    width: 100%;
+    height: 550px;
+    margin: 0;
+    padding: 3px;
+  }
+
+  section nav ul li {
+    width: 100%;
+    background-color: lightgrey;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    font-size: 30px;
+    /*   border: solid 5px gray;*/
+  }
+
+  aside nav ul li {
+    list-style-type: none;
+    font-size: 30px;
+    color: whitesmoke;
+  }
+
+  footer nav ul li {
+    width: 100%;
+    background-color: lightgray;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+    /*   border: solid 5px gray;*/
+  }
+
+  footer nav {
+    background-color: lightgray;
+  }
+
+  section {
+    background-color: lightgrey;
+  }
+
+  .sinSubrayado {
+    text-decoration: none;
+  }
+
+  .titulo {
+    font-size: 60px;
+    color: grey;
+  }
+
+  .fondoFooter {
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .fondoFormulario {
+    background-image: url("../streetwear.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 690px;
+  }
+
+  .menuFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .itemMenu:hover {
+    background-color: #fafad2;
+    color: grey;
+    border-radius: 20px;
+  }
+  .itemMenu:active {
+    background-color: black;
+    color: white;
+  }
+  .itemMenu:link {
+    color: darkgrey;
+  }
+  .itemMenu:visited {
+    color: darkgrey;
+  }
+
+  ::selection {
+    color: goldenrod;
+    background-color: lightslategray;
+  }
+
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos sale" "productos women" "productos men" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  aside {
+    background-color: grey;
+  }
+
+  .productosFlex {
+    display: flex;
+    /*  flex-direction: row;*/
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  article {
+    background-color: lightgoldenrodyellow;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  article p {
+    margin: 10px 0;
+  }
+
+  .sectionShorts {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  #gridShorts {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos shorts" "productos shorts" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridJeans {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos jeans" "productos jeans" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridCamisas {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos camisas" "productos camisas" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridCamperas {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos camperas" "productos camperas" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridPantalones {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos pantalones" "productos pantalones" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridVestidos {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos vestidos" "productos vestidos" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridBuzos {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos buzos" "productos buzos" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridTops {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos tops" "productos tops" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridNosotros {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos nosotros" "productos nosotros" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridRemerasMen {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos remerasMen" "productos remerasMen" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridCamperasMen {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos camperasMen" "productos camperasMen" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridJeansMen {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos jeansMen" "productos jeansMen" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridCamisasMen {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos camisasMen" "productos camisasMen" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridUnderwearMen {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos underwearMen" "productos underwearMen" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridPantalonesMen {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos pantalonesMen" "productos pantalonesMen" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridBermudasMen {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos bermudasMen" "productos bermudasMen" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridBuzosMen {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos buzosMen" "productos buzosMen" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridAccesorios {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos accesorios" "productos accesorios" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridTalles {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos talles" "productos talles" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridContacto {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos contacto" "productos contacto" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridLogin {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos login" "productos login" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridPago {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos pago" "productos pago" "pie pie";
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  @font-face {
+    font-family: "Lobster-Regular";
+    src: url("../trabajo1/fuente/Lobster-Regular.ttf");
+  }
+  body {
+    font-family: "Lobster-Regular";
+    background-color: lightgoldenrodyellow;
+  }
+
+  header h1 {
+    text-align: center;
+    font-size: 120px;
+    color: black;
+  }
+  header h2 {
+    text-align: center;
+    font-size: 45px;
+    color: whitesmoke;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .subrayado {
+    text-decoration: underline;
+  }
+
+  .descripcionEmpresa {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .seccionNosotros {
+    padding: 20px;
+  }
+
+  .seccionContacto {
+    padding: 20px;
+  }
+
+  .seccionPago {
+    padding: 20px;
+  }
+
+  .fondoImagen {
+    background-image: url("../trabajo1/models.jpg!d");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  header {
+    width: 100%;
+    height: 550px;
+    margin: 0;
+    padding: 3px;
+  }
+
+  section nav ul li {
+    width: 100%;
+    background-color: lightgrey;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    font-size: 25px;
+    /*   border: solid 5px gray;*/
+  }
+
+  aside nav ul li {
+    list-style-type: none;
+    font-size: 25px;
+    color: whitesmoke;
+  }
+
+  footer nav ul li {
+    width: 100%;
+    background-color: lightgray;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+    /*   border: solid 5px gray;*/
+  }
+
+  footer nav {
+    background-color: lightgray;
+  }
+
+  section {
+    background-color: lightgrey;
+  }
+
+  .sinSubrayado {
+    text-decoration: none;
+  }
+
+  .titulo {
+    font-size: 45px;
+    color: grey;
+  }
+
+  .fondoFooter {
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+  }
+
+  img {
+    height: 500px;
+    width: 100%;
+  }
+
+  article img {
+    height: 200px;
+  }
+
+  .fondoFormulario {
+    background-image: url("../streetwear.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 690px;
+  }
+
+  .menuFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .itemMenu:hover {
+    background-color: lightgoldenrodyellow;
+    color: grey;
+    border-radius: 20px;
+  }
+  .itemMenu:active {
+    background-color: black;
+    color: white;
+  }
+  .itemMenu:link {
+    color: darkgrey;
+  }
+  .itemMenu:visited {
+    color: darkgrey;
+  }
+  .itemMenu ::selection {
+    color: goldenrod;
+    background-color: lightslategray;
+  }
+  .itemMenu #gridAreas {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "sale" "women" "men" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu aside {
+    background-color: grey;
+  }
+  .itemMenu .productosFlex {
+    display: flex;
+    /*  flex-direction: row;*/
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .itemMenu article {
+    background-color: lightgoldenrodyellow;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+  }
+  .itemMenu article p {
+    margin: 10px 0;
+  }
+  .itemMenu .sectionShorts {
+    padding: 10px;
+    margin: 5px;
+  }
+  .itemMenu #gridShorts {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "shorts" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridJeans {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "jeans" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridCamisas {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "camisas" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridCamperas {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "camperas" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridPantalones {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "pantalones" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridVestidos {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "vestidos" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridBuzos {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "buzos" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridTops {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "tops" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridNosotros {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "nosotros" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridRemerasMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "remerasMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridCamperasMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "camperasMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridJeansMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "jeansMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridcamisasMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "camisasMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridUnderwearMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "underwearMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridPantalonesMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "pantalonesMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridBermudasMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "bermudasMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridBuzosMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "buzosMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridAccesorios {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "accesorios" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridTalles {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "talles" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridContacto {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "contacto" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridLogin {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "login" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+  .itemMenu #gridPago {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "pago" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) and (max-width: 480px) {
+  @font-face {
+    font-family: "Lobster-Regular";
+    src: url("../trabajo1/fuente/Lobster-Regular.ttf");
+  }
+  body {
+    font-family: "Lobster-Regular";
+    background-color: lightgoldenrodyellow;
+  }
+
+  header h1 {
+    text-align: center;
+    font-size: 95px;
+    color: whitesmoke;
+  }
+  header h2 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  .subrayado {
+    text-decoration: underline;
+  }
+
+  .descripcionEmpresa {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .seccionNosotros {
+    padding: 20px;
+  }
+
+  .seccionContacto {
+    padding: 20px;
+  }
+
+  .seccionPago {
+    padding: 20px;
+  }
+
+  .fondoImagen {
+    background-image: url("../trabajo1/models.jpg!d");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  header {
+    width: 100%;
+    height: 550px;
+    margin: 0;
+    padding: 3px;
+  }
+
+  section nav ul li {
+    width: 100%;
+    background-color: lightgrey;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+    /*   border: solid 5px gray;*/
+  }
+
+  aside nav ul li {
+    list-style-type: none;
+    font-size: 20px;
+    color: whitesmoke;
+  }
+
+  footer nav ul li {
+    width: 100%;
+    background-color: lightgray;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px;
+    text-align: center;
+    font-size: 20px;
+    /*   border: solid 5px gray;*/
+  }
+
+  footer nav {
+    background-color: lightgray;
+  }
+
+  section {
+    background-color: lightgrey;
+  }
+
+  .sinSubrayado {
+    text-decoration: none;
+  }
+
+  .titulo {
+    font-size: 30px;
+    color: grey;
+  }
+
+  .fondoFooter {
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+  }
+
+  img {
+    height: 350px;
+    width: 100%;
+  }
+
+  article img {
+    height: 150px;
+  }
+
+  .fondoFormulario {
+    background-image: url("../streetwear.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 690px;
+  }
+
+  .menuFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .itemMenu:hover {
+    background-color: lightgoldenrodyellow;
+    color: grey;
+    border-radius: 20px;
+  }
+  .itemMenu:active {
+    background-color: black;
+    color: white;
+  }
+  .itemMenu:link {
+    color: darkgrey;
+  }
+  .itemMenu:visited {
+    color: darkgrey;
+  }
+
+  ::selection {
+    color: goldenrod;
+    background-color: lightslategray;
+  }
+
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "sale" "women" "men" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  aside {
+    background-color: grey;
+  }
+
+  .productosFlex {
+    display: flex;
+    /*  flex-direction: row;*/
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  article {
+    background-color: lightgoldenrodyellow;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  article p {
+    margin: 10px 0;
+  }
+
+  .sectionShorts {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  #gridShorts {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "shorts" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridJeans {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "jeans" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridCamisas {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "camisas" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridCamperas {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "camperas" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridPantalones {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "pantalones" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridVestidos {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "vestidos" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridBuzos {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "buzos" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridTops {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "tops" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridNosotros {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "nosotros" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridRemerasMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "remerasMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridCamperasMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "remerasMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridJeansMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "jeansMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridCamisasMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "camisasMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridUnderwearMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "underwearMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridPantalonesMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "pantalonesMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridBermudasMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "bermudasMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridBuzosMen {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "buzosMen" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridAccesorios {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "accesorios" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridTalles {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "talles" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridContacto {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "contacto" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridLogin {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "login" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+
+  #gridPago {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "pago" "pie";
+    grid-template-columns: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */
