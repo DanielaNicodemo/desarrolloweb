@@ -989,27 +989,32 @@ footer {
   .itemMenu:visited {
     color: darkgrey;
   }
-  .itemMenu ::selection {
+
+  ::selection {
     color: goldenrod;
     background-color: lightslategray;
   }
-  .itemMenu #gridAreas {
+
+  #gridAreas {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "sale" "women" "men" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu aside {
+
+  aside {
     background-color: grey;
   }
-  .itemMenu .productosFlex {
+
+  .productosFlex {
     display: flex;
     /*  flex-direction: row;*/
     flex-flow: row wrap;
     justify-content: center;
   }
-  .itemMenu article {
+
+  article {
     background-color: lightgoldenrodyellow;
     border-radius: 4px;
     margin: 5px;
@@ -1017,161 +1022,185 @@ footer {
     font-size: 1rem;
     padding: 20px;
   }
-  .itemMenu article p {
+
+  article p {
     margin: 10px 0;
   }
-  .itemMenu .sectionShorts {
+
+  .sectionShorts {
     padding: 10px;
     margin: 5px;
   }
-  .itemMenu #gridShorts {
+
+  #gridShorts {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "shorts" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridJeans {
+
+  #gridJeans {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "jeans" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridCamisas {
+
+  #gridCamisas {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "camisas" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridCamperas {
+
+  #gridCamperas {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "camperas" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridPantalones {
+
+  #gridPantalones {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "pantalones" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridVestidos {
+
+  #gridVestidos {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "vestidos" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridBuzos {
+
+  #gridBuzos {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "buzos" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridTops {
+
+  #gridTops {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "tops" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridNosotros {
+
+  #gridNosotros {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "nosotros" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridRemerasMen {
+
+  #gridRemerasMen {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "remerasMen" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridCamperasMen {
+
+  #gridCamperasMen {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "camperasMen" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridJeansMen {
+
+  #gridJeansMen {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "jeansMen" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridcamisasMen {
+
+  #gridcamisasMen {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "camisasMen" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridUnderwearMen {
+
+  #gridUnderwearMen {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "underwearMen" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridPantalonesMen {
+
+  #gridPantalonesMen {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "pantalonesMen" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridBermudasMen {
+
+  #gridBermudasMen {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "bermudasMen" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridBuzosMen {
+
+  #gridBuzosMen {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "buzosMen" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridAccesorios {
+
+  #gridAccesorios {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "accesorios" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridTalles {
+
+  #gridTalles {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "talles" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridContacto {
+
+  #gridContacto {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "contacto" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridLogin {
+
+  #gridLogin {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "login" "pie";
     grid-template-columns: 100%;
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
-  .itemMenu #gridPago {
+
+  #gridPago {
     display: grid;
     grid-template-areas: "cabeza" "menu" "productos" "pago" "pie";
     grid-template-columns: 100%;
@@ -1179,7 +1208,7 @@ footer {
     grid-row-gap: 0;
   }
 }
-@media (min-width: 481px) and (max-width: 1023px) and (max-width: 480px) {
+@media (max-width: 480px) {
   @font-face {
     font-family: "Lobster-Regular";
     src: url("../trabajo1/fuente/Lobster-Regular.ttf");
@@ -1554,6 +1583,59 @@ footer {
     grid-column-gap: 10px;
     grid-row-gap: 0;
   }
+}
+.botonFormulario, .botonLogin {
+  width: 150px;
+  height: 40px;
+  background-color: #215c7e;
+  border-radius: 15%;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.botonLogin {
+  width: 100%;
+  border-radius: 5%;
+}
+
+/* $estiloBotonRedes: (
+    color: rgb(2, 2, 87),
+);
+
+
+.botonRedes {
+    color: map-get($estiloBotonRedes, color );
+
+
+} */
+.boton-facebook {
+  color: #020257;
+}
+
+.boton-instagram {
+  color: #cc0829;
+}
+
+.boton-whatsapp {
+  color: #0e7c0e;
+}
+
+.botonRegistro {
+  width: 100%;
+  height: 40px;
+  background-color: #1a4761;
+  color: whitesmoke;
+  font-size: 20px;
+  border-radius: 5%;
+}
+
+.botonRecupero {
+  width: 100%;
+  height: 40px;
+  background-color: #112f41;
+  color: whitesmoke;
+  font-size: 20px;
+  border-radius: 5%;
 }
 
 /*# sourceMappingURL=destino.css.map */

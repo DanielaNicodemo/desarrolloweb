@@ -1,0 +1,75 @@
+//extend
+.botonFormulario {
+
+    width:150px;
+    height:40px;
+    background-color: rgb(33, 92, 126);
+    border-radius: 15%;
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+
+.botonLogin {
+    @extend .botonFormulario;
+    width:100%;
+    border-radius: 5%;
+}
+
+//maps
+
+/* $estiloBotonRedes: (
+    color: rgb(2, 2, 87),
+);
+
+
+.botonRedes {
+    color: map-get($estiloBotonRedes, color );
+
+
+} */
+
+
+$estiloBotonRedes: (
+    facebook: rgb(2, 2, 87),
+    instagram: rgb(204, 8, 41),
+    whatsapp: rgb(14, 124, 14),
+);
+
+
+@each $nombres, $color in $estiloBotonRedes {
+    .boton-#{$nombres} {
+        color: $color;
+        
+    }
+}
+
+//mixin
+
+@mixin estilo($ancho, $altura, $colorfondo, $color, $tamaniofuente,$borde) {
+    width: $ancho;
+    height: $altura;
+    background-color: $colorfondo;
+    color: $color;
+    font-size:$tamaniofuente;
+    border-radius: $borde;
+
+
+}
+
+.botonRegistro{
+    @include estilo(100%, 40px, rgb(26, 71, 97), whitesmoke, 20px, 5%)
+
+
+}
+
+.botonRecupero{
+    @include estilo(100%, 40px, rgb(17, 47, 65), whitesmoke, 20px, 5%)
+
+}
+
+
+
+
+
+
