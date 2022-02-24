@@ -1,4 +1,6 @@
-//extend
+/*botones*/
+
+/*extend*/
 .botonFormulario {
 
     width:150px;
@@ -16,19 +18,7 @@
     border-radius: 5%;
 }
 
-//maps
-
-/* $estiloBotonRedes: (
-    color: rgb(2, 2, 87),
-);
-
-
-.botonRedes {
-    color: map-get($estiloBotonRedes, color );
-
-
-} */
-
+/*maps*/
 
 $estiloBotonRedes: (
     facebook: rgb(2, 2, 87),
@@ -44,7 +34,7 @@ $estiloBotonRedes: (
     }
 }
 
-//mixin
+/*mixin*/
 
 @mixin estilo($ancho, $altura, $colorfondo, $color, $tamaniofuente,$borde) {
     width: $ancho;

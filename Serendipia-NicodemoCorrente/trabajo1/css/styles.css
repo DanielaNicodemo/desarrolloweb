@@ -1,4 +1,6 @@
 /*import*/
+/*estilos generales*/
+/*fuentes*/
 @font-face {
   font-family: "Lobster-Regular";
   src: url("../fuente/Lobster-Regular.ttf");
@@ -44,7 +46,6 @@ section nav ul li {
   padding: 0px;
   text-align: center;
   font-size: 30px;
-  /*   border: solid 5px gray;*/
 }
 
 aside nav ul li {
@@ -64,7 +65,6 @@ footer nav ul li {
   padding: 0px;
   text-align: center;
   font-size: 20px;
-  /*   border: solid 5px gray;*/
 }
 
 .sinSubrayado {
@@ -88,6 +88,7 @@ article p {
   margin: 10px 0;
 }
 
+/*fondos*/
 .fondoImagen {
   background-image: url("../trabajo1/models.jpg!d");
   background-repeat: no-repeat;
@@ -130,6 +131,7 @@ aside {
   background-color: black;
 }
 
+/*flexbox*/
 .menuFlex {
   display: flex;
   flex-direction: row;
@@ -140,10 +142,10 @@ aside {
 
 .productosFlex {
   display: flex;
-  /*  flex-direction: row;*/
   flex-flow: row wrap;
 }
 
+/*grids*/
 #gridAreas {
   display: grid;
   grid-template-areas: "cabeza cabeza" "menu menu" "productos women" "productos men" "pie pie";
@@ -440,13 +442,12 @@ footer {
   grid-area: talles;
 }
 
+/*animaciones y gradiente*/
 #sale {
   grid-area: sale;
   font-size: 60px;
-  /* background-color: yellow;*/
   text-align: center;
   margin: 0;
-  /*   background-image: radial-gradient( #eaf818 40%, #f6fc9c 74%);*/
   background-image: radial-gradient(#f6fc9c 30%, #eaf818 74%);
 }
 
@@ -465,6 +466,8 @@ footer {
   width: 50%;
 }
 
+/*responsive*/
+/*DESKTOP*/
 @media (min-width: 1024px) {
   @font-face {
     font-family: "Lobster-Regular";
@@ -536,7 +539,6 @@ footer {
     padding: 0px;
     text-align: center;
     font-size: 30px;
-    /*   border: solid 5px gray;*/
   }
 
   aside nav ul li {
@@ -556,7 +558,6 @@ footer {
     padding: 0px;
     text-align: center;
     font-size: 20px;
-    /*   border: solid 5px gray;*/
   }
 
   footer nav {
@@ -633,7 +634,6 @@ footer {
 
   .productosFlex {
     display: flex;
-    /*  flex-direction: row;*/
     flex-flow: row wrap;
     justify-content: center;
   }
@@ -832,6 +832,7 @@ footer {
     grid-row-gap: 0;
   }
 }
+/*TABLET*/
 @media (min-width: 481px) and (max-width: 1023px) {
   @font-face {
     font-family: "Lobster-Regular";
@@ -903,7 +904,6 @@ footer {
     padding: 0px;
     text-align: center;
     font-size: 25px;
-    /*   border: solid 5px gray;*/
   }
 
   aside nav ul li {
@@ -923,7 +923,6 @@ footer {
     padding: 0px;
     text-align: center;
     font-size: 20px;
-    /*   border: solid 5px gray;*/
   }
 
   footer nav {
@@ -1009,7 +1008,6 @@ footer {
 
   .productosFlex {
     display: flex;
-    /*  flex-direction: row;*/
     flex-flow: row wrap;
     justify-content: center;
   }
@@ -1208,6 +1206,7 @@ footer {
     grid-row-gap: 0;
   }
 }
+/*SMARTPHONE*/
 @media (max-width: 480px) {
   @font-face {
     font-family: "Lobster-Regular";
@@ -1279,7 +1278,6 @@ footer {
     padding: 0px;
     text-align: center;
     font-size: 20px;
-    /*   border: solid 5px gray;*/
   }
 
   aside nav ul li {
@@ -1299,7 +1297,6 @@ footer {
     padding: 0px;
     text-align: center;
     font-size: 20px;
-    /*   border: solid 5px gray;*/
   }
 
   footer nav {
@@ -1385,7 +1382,6 @@ footer {
 
   .productosFlex {
     display: flex;
-    /*  flex-direction: row;*/
     flex-flow: row wrap;
     justify-content: center;
   }
@@ -1584,6 +1580,8 @@ footer {
     grid-row-gap: 0;
   }
 }
+/*botones*/
+/*extend*/
 .botonFormulario, .botonLogin {
   width: 150px;
   height: 40px;
@@ -1598,16 +1596,7 @@ footer {
   border-radius: 5%;
 }
 
-/* $estiloBotonRedes: (
-    color: rgb(2, 2, 87),
-);
-
-
-.botonRedes {
-    color: map-get($estiloBotonRedes, color );
-
-
-} */
+/*maps*/
 .boton-facebook {
   color: #020257;
 }
@@ -1620,6 +1609,7 @@ footer {
   color: #0e7c0e;
 }
 
+/*mixin*/
 .botonRegistro {
   width: 100%;
   height: 40px;
@@ -1638,4 +1628,4 @@ footer {
   border-radius: 5%;
 }
 
-/*# sourceMappingURL=destino.css.map */
+/*# sourceMappingURL=styles.css.map */

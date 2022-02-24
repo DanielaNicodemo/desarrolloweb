@@ -1,4 +1,6 @@
+/*responsive*/
 
+/*DESKTOP*/
 @media(min-width:1024px){
 
     @font-face {
@@ -82,7 +84,7 @@
         padding: 0px;
         text-align: center;
         font-size: 30px;
-     /*   border: solid 5px gray;*/
+     
         
     }
     
@@ -107,7 +109,7 @@
         padding: 0px;
         text-align: center;
         font-size: 20px;
-     /*   border: solid 5px gray;*/
+     
         
     }
     
@@ -207,7 +209,6 @@
     
     .productosFlex{
         display: flex;
-      /*  flex-direction: row;*/
         flex-flow:row wrap;
         justify-content: center;
     }
@@ -618,16 +619,12 @@
     }
    
     
-   
-
-   
-    
-   
-
 
 
 }
 
+
+/*TABLET*/
 
 @media(min-width: 481px) and (max-width: 1023px) {
 
@@ -712,7 +709,6 @@
         padding: 0px;
         text-align: center;
         font-size: 25px;
-     /*   border: solid 5px gray;*/
         
     }
     
@@ -737,7 +733,6 @@
         padding: 0px;
         text-align: center;
         font-size: 20px;
-     /*   border: solid 5px gray;*/
         
     }
     
@@ -847,7 +842,6 @@
     
     .productosFlex{
         display: flex;
-      /*  flex-direction: row;*/
         flex-flow:row wrap;
         justify-content:center;
     }
@@ -1256,16 +1250,10 @@
 
 
 
-
-
-
-
-
-
 }
 
 
-
+/*SMARTPHONE*/
 
 @media(max-width:480px) {
 
@@ -1351,7 +1339,6 @@
         padding: 0px;
         text-align: center;
         font-size: 20px;
-     /*   border: solid 5px gray;*/
         
     }
     
@@ -1376,7 +1363,6 @@
         padding: 0px;
         text-align: center;
         font-size: 20px;
-     /*   border: solid 5px gray;*/
         
     }
     
@@ -1482,7 +1468,6 @@
     
     .productosFlex{
         display: flex;
-      /*  flex-direction: row;*/
         flex-flow:row wrap;
         justify-content: center;
     }

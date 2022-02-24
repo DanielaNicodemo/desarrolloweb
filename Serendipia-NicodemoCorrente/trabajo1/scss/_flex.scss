@@ -1,3 +1,4 @@
+/*flexbox*/
 
 .menuFlex{
     display:flex;
@@ -9,6 +10,5 @@
 
 .productosFlex{
     display: flex;
-  /*  flex-direction: row;*/
     flex-flow:row wrap;
 }
